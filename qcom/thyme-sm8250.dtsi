@@ -52,10 +52,6 @@ And public attribution of xiaomi platforms(like J2S and so and)
 	qcom,platform-reset-gpio = <&tlmm 12 0>;
 };
 
-&usb1 {
-        extcon = <&extcon_usb1>;
-};
-
 &sde_dsi {
 	/delete-property/ vdd-supply;
 	/delete-property/ avdd-supply;
@@ -507,7 +503,6 @@ And public attribution of xiaomi platforms(like J2S and so and)
 	qcom,fg-batt-temp-hyst = <1>;
 	qcom,fg-batt-temp-delta = <6>;
 	qcom,fg-force-load-profile;
-	qcom,fg-increase-100soc-time-2;
 	qcom,shutdown-delay-enable;
 	qcom,ki-coeff-chg-med-hi-thresh-ma = <1000>;
 	qcom,ki-coeff-chg-low-med-thresh-ma = <500>;
