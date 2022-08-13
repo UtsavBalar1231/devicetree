@@ -372,10 +372,6 @@ this file is for attribution only of elish
 	};
 };
 
-&dwc1 {
-	dr_mode = "host";
-};
-
 &usb2_phy1 {
         status = "ok";
 };
@@ -1084,6 +1080,7 @@ this file is for attribution only of elish
 		mi,cell-vol-high-threshold-mv = <4450>;
 		mi,cell-vol-max-threshold-mv = <4487>;
 		mi,chg-enable-k81;
+		mi,pd-power-max = <67>; /*charge power max : 67W */
 	};
 
 	dual-FuelGauge{
@@ -1124,6 +1121,7 @@ this file is for attribution only of elish
 
 &pm8150b_pdphy {
 	mi,non-qcom-pps-ctrl;
+	mi,pd-power-max = <67>; /*charge power max : 67W */
 };
 
 &smb1390 {
